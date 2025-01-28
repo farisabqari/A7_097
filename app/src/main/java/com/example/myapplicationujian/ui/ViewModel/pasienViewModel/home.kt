@@ -21,7 +21,6 @@ sealed class HomeUiState {
 class HomeViewModelPasien(private val pasienRepo: PasienRepository) : ViewModel() {
     var pasienUIState: HomeUiState by mutableStateOf(HomeUiState.Loading)
         private set
-
     init {
         Log.d("HomeViewModelPasien", "Initializing HomeViewModelPasien...")
         getPasien()
