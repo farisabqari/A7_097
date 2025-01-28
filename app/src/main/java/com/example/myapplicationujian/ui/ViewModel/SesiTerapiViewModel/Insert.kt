@@ -19,6 +19,7 @@ class InsertSesiViewModel(
     var stuiState by mutableStateOf(InsertSesiUiState())
         private set
 
+
     init {
         loadDropdownOptions()
     }
